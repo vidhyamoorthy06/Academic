@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="570dp"
+		    android:background="@drawable/bg2"
+		    android:orientation="vertical" >
+
+		    <TextView
+		        android:id="@+id/userregis"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="18dp"
+		        android:text="Large Text"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+		    <EditText
+		        android:id="@+id/reguname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/userregis"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="39dp"
+		        android:ems="10"
+		        android:hint="User Name" >
+
+		        <requestFocus />
+		    </EditText>
+
+		    <EditText
+		        android:id="@+id/regpass"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/reguname"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="32dp"
+		        android:ems="10"
+		        android:hint="Password"
+		        android:inputType="textPassword" />
+
+		    <EditText
+		        android:id="@+id/regrepass"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/regpass"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="48dp"
+		        android:ems="10"
+		        android:hint="Conform Password"
+		        android:inputType="textPassword" />
+
+		    <EditText
+		        android:id="@+id/regdob"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/regrepass"
+		        android:layout_below="@+id/regrepass"
+		        android:layout_marginTop="44dp"
+		        android:hint="DOB"
+		        android:ems="10" />
+
+		    <CheckBox
+		        android:id="@+id/acceptpolicy"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/reguname"
+		        android:layout_below="@+id/regdob"
+		        android:layout_marginTop="43dp"
+		        android:text="I accept Terms and Conditions" />
+
+		    <Button
+		        android:id="@+id/register"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/acceptpolicy"
+		        android:layout_centerHorizontal="true"
+		        android:layout_marginTop="37dp"
+		        android:text="Register My Account" />
+
+		</RelativeLayout>
+</ScrollView>

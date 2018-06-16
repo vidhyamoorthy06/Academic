@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+		<RelativeLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="570dp"
+		    android:background="@drawable/bg1"
+		    android:orientation="vertical" >
+
+			<TextView
+			    android:id="@+id/textView1"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentTop="true"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="46dp"
+			    android:text="Assign Ip"
+			    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<TextView
+			    android:id="@+id/textView2"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/textView1"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="70dp"
+			    android:text="Enter Ip To Communicate"
+			    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<EditText
+			    android:id="@+id/ipaddr"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/textView2"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="30dp"
+			    android:ems="10" 
+			    android:hint="Ip Address">
+
+			    <requestFocus />
+			</EditText>
+
+			<Button
+			    android:id="@+id/connectbutton"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignRight="@+id/textView1"
+			    android:layout_below="@+id/ipaddr"
+			    android:layout_marginTop="70dp"
+			    android:text="Connect" />
+
+			<RadioGroup
+			    android:id="@+id/loginregbutton"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentLeft="true"
+			    android:layout_below="@+id/connectbutton"
+			    android:layout_marginTop="25dp"
+			    android:orientation="vertical" >
+
+			    <RadioButton
+			        android:id="@+id/staffreg"
+			        android:layout_width="222dp"
+			        android:layout_height="match_parent"
+			        android:text="Staff Registration" />
+
+			    <RadioButton
+			        android:id="@+id/stafflogin"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Staff Login" />
+
+			    <RadioButton
+			        android:id="@+id/childreg"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Child Registration" />
+
+			    <RadioButton
+			        android:id="@+id/childlogin"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Child Login" />
+			</RadioGroup>
+						    
+    	</RelativeLayout>
+</ScrollView>
+
